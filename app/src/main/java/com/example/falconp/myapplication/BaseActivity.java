@@ -1,6 +1,9 @@
 package com.example.falconp.myapplication;
 
 import android.app.ProgressDialog;
+import android.os.Bundle;
+import android.os.PersistableBundle;
+import android.support.annotation.Nullable;
 import android.support.annotation.VisibleForTesting;
 import android.support.v7.app.AppCompatActivity;
 
@@ -37,6 +40,11 @@ public class BaseActivity extends AppCompatActivity {
 
     public void signOut(){
         mAuth.signOut();
+    }
+
+    @Override
+    public void onCreate(@Nullable Bundle savedInstanceState, @Nullable PersistableBundle persistentState) {
+        super.onCreate(savedInstanceState, persistentState);
     }
 
     @Override
