@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "266840959695",
+    "firebase_url": "https://hackatruck-54f46.firebaseio.com",
+    "project_id": "hackatruck-54f46",
+    "storage_bucket": "hackatruck-54f46.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:266840959695:android:e7600664c8d255b3",
+        "android_client_info": {
+          "package_name": "com.example.falconp.myapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "266840959695-pecllqdmtm2tbpuj4fpgam7ph9ivfno2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.falconp.myapplication",
+            "certificate_hash": "48e899cd500f6dc9a10505ed8a95dd0573185361"
+          }
+        },
+        {
+          "client_id": "266840959695-hgkcupcht5m20hnalp4178ug7d2n57oq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCMyIwtlYX5IY4_ctFykbvTWnpKTBFKbqM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "266840959695-hgkcupcht5m20hnalp4178ug7d2n57oq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
