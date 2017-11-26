@@ -154,7 +154,7 @@
             android:text="Motor" />
 
         <EditText
-            android:id="@+id/editText11"
+            android:id="@+id/et_motor_obs"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -176,7 +176,7 @@
             android:text="Cabina" />
 
         <EditText
-            android:id="@+id/editText12"
+            android:id="@+id/et_cabina_obs"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"

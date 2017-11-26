@@ -15,4 +15,16 @@
     <string name="firebase_status_fmt">Firebase User: %s</string>
     <string name="acceder">Acceder</string>
     <string name="registro">Registro\ndel\nPatio</string>
+    <string name="preregistro">Pre Registro\ndel\nPatio</string>
+    <string name="elegir_seccion">Elige una sección</string>
+    <string-array name="secciones">
+        <item>Primer sección</item>
+        <item>Segunda sección</item>
+        <item>Tercer sección</item>
+    </string-array>
+    <string-array name="size_values">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
 </resources>
