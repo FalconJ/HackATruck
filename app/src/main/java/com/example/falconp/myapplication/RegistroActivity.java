@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Spinner;
 
+import com.example.falconp.myapplication.Models.CustomAdapter;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -24,6 +25,10 @@ import java.util.List;
 
 public class RegistroActivity extends BaseActivity
     implements View.OnClickListener{
+
+    List<String> list = new ArrayList<>();
+
+    int hidingItemIndex = 0;
 
     DatabaseReference mDatabase;
     @Override
@@ -71,21 +76,50 @@ public class RegistroActivity extends BaseActivity
         switch (size){
             case 1:
                 intent = new Intent(RegistroActivity.this, FirstSectionActivity.class);
+                startActivityForResult(intent, 1);
                 break;
             case 2:
                 intent = new Intent(RegistroActivity.this, SecondSectionActivity.class);
+                startActivityForResult(intent, 2);
                 break;
             case 3:
                 intent = new Intent(RegistroActivity.this, ThirdSectionActivity.class);
+                startActivityForResult(intent, 3);
+
                 break;
             default:
                 intent = null;
         }
 
         if(intent != null){
-            startActivity(intent);
         }
     }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        list.add("Elige una sección")       ;   //  Initial dummy entry
+        list.add("Primer Sección");
+        list.add("Segunda Sección");
+        list.add("Tercer Sección");
+        int hide;
+
+        Spinner spm = findViewById(R.id.spinnerSection);
+        CustomAdapter dataAdapter = new CustomAdapter(this, android.R.layout.simple_spinner_item, list.toArray(new String[list.size()]), requestCode);
+        dataAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        spm.setAdapter(dataAdapter);
+
+        switch(requestCode) {
+            case 1:
+                break;
+            case 2:
+                break;
+            case 3:
+                break;
+
+        }
+
+        }
 
     @Override
     public void onClick(View view) {

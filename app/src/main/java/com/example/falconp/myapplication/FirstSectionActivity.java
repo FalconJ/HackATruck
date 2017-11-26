@@ -1,5 +1,6 @@
 package com.example.falconp.myapplication;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.view.View;
@@ -75,7 +76,10 @@ public class FirstSectionActivity extends BaseActivity
         int i = view.getId();
 
         if(i == R.id.bt_registrar){
-
+            Intent resultIntent = new Intent();
+            resultIntent.putExtra("Etst", 1);
+            setResult(1, resultIntent);
+            finish();
         }
     }
 }

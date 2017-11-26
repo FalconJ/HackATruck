@@ -62,7 +62,7 @@ public class PreRegistroActivity extends BaseActivity
     }
 
     private void saveInDatabase(){
-        DatabaseReference mDatabase = FirebaseDatabase.getInstance().getReference("preregistro");
+        DatabaseReference mDatabase = FirebaseDatabase.getInstance().getReference("pregistro");
         String userId = mDatabase.push().getKey();
 
         PreRegistro registro = new PreRegistro(
@@ -84,6 +84,8 @@ public class PreRegistroActivity extends BaseActivity
         );
 
         mDatabase.child(userId).setValue(registro);
+
+        finish();
     }
 
     @Override
