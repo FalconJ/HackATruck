@@ -72,6 +72,10 @@ public class FirstSectionActivity extends BaseActivity
 
     @Override
     public void onClick(View view) {
+        int i = view.getId();
 
+        if(i == R.id.bt_registrar){
+
+        }
     }
 }
