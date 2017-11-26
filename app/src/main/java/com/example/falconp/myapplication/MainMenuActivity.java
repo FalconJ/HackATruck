@@ -26,7 +26,7 @@ public class MainMenuActivity extends BaseActivity
         //Buttons
         findViewById(R.id.logout_btn).setOnClickListener(this);
         findViewById(R.id.registro_btn).setOnClickListener(this);
-
+        findViewById(R.id.test).setOnClickListener(this);
 
         mAuth = FirebaseAuth.getInstance();
     }
@@ -53,6 +53,10 @@ public class MainMenuActivity extends BaseActivity
         else if(i == R.id.registro_btn){
             Intent registro = new Intent(this,  RegistroActivity.class);
             startActivity(registro);
+        }
+        else if(i == R.id.test){
+            Intent test = new Intent(this, FirstSectionActivity.class);
+            startActivity(test);
         }
     }
 }
